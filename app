@@ -2,7 +2,6 @@ package app;
 
 import java.util.Locale;
 import java.util.Scanner;
-
 import entidades.Livro;
 import entidades.Usuario;
 
@@ -21,6 +20,7 @@ public class Programa {
 		System.out.print("Curso: ");
 		sc.nextLine();
 		String curso = sc.nextLine();
+		
 		Usuario usuario = new Usuario(nome, matricula, curso);
 		System.out.println("-------------------------------");
 		System.out.println("Quantidadede de alugueis tem 3 livros por usuario");
@@ -38,11 +38,9 @@ public class Programa {
 			Livro livro = new Livro(titulo, isbn);
 			usuario.addQuantLivros(livro);
 			System.out.println("-------------------------------");
-
 		}
 		System.out.println("-------------------------------");
 		System.out.println(usuario);
-
 		sc.close();
 	}
 
