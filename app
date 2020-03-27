@@ -12,7 +12,7 @@ public class Programa {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Bem vindo a biblioteca! ");
+		System.out.println("Bem vindo! ");
 		System.out.println("Digite seus dados ->");
 		System.out.print("Nome: ");
 		String nome = sc.nextLine();
@@ -23,7 +23,7 @@ public class Programa {
 		String curso = sc.nextLine();
 		Usuario usuario = new Usuario(nome, matricula, curso);
 		System.out.println("-------------------------------");
-		System.out.println("Quantidadede alugueis se limita a 3 livros por usuario");
+		System.out.println("Quantidadede de alugueis tem 3 livros por usuario");
 		System.out.println("Quantos livros deseja usar? ");
 		int n = sc.nextInt();
 
